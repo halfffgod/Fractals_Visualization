@@ -23,8 +23,8 @@ void	fractal_init(t_fractol *data)
 	data->y_scale = (4.0 / HEIGHT);
 	data->x_center = 2.0;
 	data->y_center = 2.0;
-	data->max_iter = 50;
-	data->color = 0xf4f4f5;
+	data->max_iter = 80;
+	data->color = 0xEE33FF; //fuck colors
 	data->color_code = 0;
 }
 
@@ -32,23 +32,23 @@ void	get_color(t_fractol *data)
 {
 	data->color_code++;
 	if (data->color_code == 0)
-		data->color = 0xff0801;
+		data->color = 0x9C789D;
 	else if (data->color_code == 1)
-		data->color = 0xfff600;
+		data->color = 0xA88A30;
 	else if (data->color_code == 2)
-		data->color = 0x18ff00;
+		data->color = 0x677E24;
 	else if (data->color_code == 3)
-		data->color = 0xf4f4f5;
+		data->color = 0xA17DBE;
 	else if (data->color_code == 4)
-		data->color = 0xb0ffd9;
+		data->color = 0x24677E;
 	else if (data->color_code == 5)
-		data->color = 0xffffd9;
+		data->color = 0xFFFFD9;
 	else if (data->color_code == 6)
 		data->color = 0xFFFCA7;
 	else if (data->color_code == 7)
 		data->color = 0xf1f1e1;
 	else if (data->color_code == 8)
-		data->color = 0xF0F8FF;
+		data->color = 0xF4E7FA;
 	else if (data->color_code == 9)
 		data->color_code = 0;
 }

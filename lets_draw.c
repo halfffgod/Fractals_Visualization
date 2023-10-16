@@ -12,7 +12,7 @@
 
 #include "fractol.h"
 
-void	lets_draw(t_fractol *data, void(*f)(t_fractol *data))
+void	lets_draw(t_fractol *data, void (*f)(t_fractol *))
 {
 	int	color;
 

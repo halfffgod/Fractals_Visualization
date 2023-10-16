@@ -14,7 +14,9 @@
 
 int	checking(int ac, char **av, t_fractol *data)
 {
-	if (ft_strncmp(av[1], "mandelbrot", 10) == 0
+	if (ac == 4 && (is_numeric(av[2]) == 0 || is_numeric(av[3]) == 0))
+		errors();
+	if (ac == 2 && ft_strncmp(av[1], "mandelbrot", 10) == 0
 		&& ft_strlen(av[1]) == 10)
 	{
 		data->value = 0;
@@ -30,10 +32,7 @@ int	checking(int ac, char **av, t_fractol *data)
 		return (1);
 	}
 	else
-	{
 		errors();
-		exit(1);
-	}
 	return (0);
 }
 
@@ -45,11 +44,6 @@ int	main(int ac, char **av)
 	if (!data)
 		return (-1);
 	fractal_init(data);
-	if (ac == 4 && (is_numeric(av[2]) == 0 || is_numeric(av[3]) == 0))
-	{
-		errors();
-		exit (1);
-	}
 	if (ac == 2 || ac == 4)
 	{
 		if (checking(ac, av, data) == 1)
@@ -64,8 +58,5 @@ int	main(int ac, char **av)
 		}
 	}
 	else
-	{
 		errors();
-		exit (1);
-	}
 }

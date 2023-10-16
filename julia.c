@@ -22,7 +22,7 @@ void	julia_default(int ac, char **av, t_fractol *data)
 	else if (ac == 4)
 	{
 			data->julia_var_re = atoi_d(av[2]);
-			data->julia_var_im = atoi_d(av[3]);
+			data->julia_var_im = atoi_d(av[3]) * (-1);
 	}
 }
 

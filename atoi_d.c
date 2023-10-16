@@ -16,8 +16,6 @@ int	is_numeric(const char *str)
 	int	len;
 	int	has_dec;
 
-	if (!str || *str == '\0')
-		return (0);
 	i = 0;
 	len = 0;
 	has_dec = 0;

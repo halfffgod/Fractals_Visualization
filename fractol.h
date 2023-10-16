@@ -79,7 +79,7 @@ void	julia_default(int ac, char **av, t_fractol *data);
 void	julia(t_fractol *data);
 
 //drawing
-void	lets_draw(t_fractol *data, void(*f)(t_fractol *data));
+void	lets_draw(t_fractol *data, void (*f)(t_fractol *));
 int		closing(t_fractol *data);
 int		key_press(int keycode, t_fractol *data);
 int		mouse_press(int key, int x, int y, t_fractol *data);
