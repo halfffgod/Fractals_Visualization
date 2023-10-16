@@ -6,7 +6,7 @@
 /*   By: nbadalia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 13:54:36 by nbadalia          #+#    #+#             */
-/*   Updated: 2023/10/06 13:59:29 by nbadalia         ###   ########.fr       */
+/*   Updated: 2023/10/16 11:12:23 by nbadalia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	checking(int ac, char **av, t_fractol *data)
 		lets_draw(data, &mandelbrot);
 		return (1);
 	}
-	//here i must check if the av[2] & av[3] are numeric
 	else if ((ft_strncmp(av[1], "julia", 5) == 0
 			&& ft_strlen(av[1]) == 5))
 	{
@@ -46,7 +45,7 @@ int	main(int ac, char **av)
 	if (!data)
 		return (-1);
 	fractal_init(data);
-	if(ac == 4 && (is_numeric(av[2]) == 0 || is_numeric(av[3]) == 0))
+	if (ac == 4 && (is_numeric(av[2]) == 0 || is_numeric(av[3]) == 0))
 	{
 		errors();
 		exit (1);

@@ -6,7 +6,7 @@
 /*   By: nbadalia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 21:40:08 by nbadalia          #+#    #+#             */
-/*   Updated: 2023/10/06 13:36:47 by nbadalia         ###   ########.fr       */
+/*   Updated: 2023/10/16 11:10:34 by nbadalia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,6 @@ void	get_colors(t_fractol *data);
 void	my_pixel_put(t_fractol *data, int x, int y, int color);
 void	get_color(t_fractol *data);
 
-
 //fractals
 void	mandelbrot(t_fractol *data);
 void	julia_default(int ac, char **av, t_fractol *data);
@@ -89,5 +88,6 @@ int		handle_no_event(t_fractol *data);
 
 void	errors(void);
 int		is_numeric(const char *str);
+double	atoi_d(const char *str);
 
 #endif

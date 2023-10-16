@@ -6,7 +6,7 @@
 /*   By: nbadalia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 13:24:38 by nbadalia          #+#    #+#             */
-/*   Updated: 2023/10/06 13:25:32 by nbadalia         ###   ########.fr       */
+/*   Updated: 2023/10/16 11:06:20 by nbadalia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ int	key_press(int keycode, t_fractol *data)
 		get_color(data);
 	return (0);
 }
+
 int	mouse_press(int key, int x, int y, t_fractol *data)
 {
 	if (key == 4)

@@ -2,7 +2,8 @@ NAME = fractol
 FLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
 MLX_FLAGS = -lmlx -framework OpenGL -framework AppKit -Ofast
 SRC =	main.c libft_utils.c inits.c my_pixel_put.c \
-		julia.c mandelbrot.c lets_draw.c events.c errors.c
+		julia.c mandelbrot.c lets_draw.c events.c \
+		errors.c atoi_d.c
 
 OBJ = $(SRC:.c=.o)
 

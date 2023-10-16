@@ -6,7 +6,7 @@
 /*   By: nbadalia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 13:47:59 by nbadalia          #+#    #+#             */
-/*   Updated: 2023/10/06 13:48:33 by nbadalia         ###   ########.fr       */
+/*   Updated: 2023/10/16 11:08:31 by nbadalia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	fractal_init(t_fractol *data)
 	data->max_iter = 50;
 	data->color = 0xf4f4f5;
 	data->color_code = 0;
-
 }
 
 void	get_color(t_fractol *data)
