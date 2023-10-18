@@ -32,6 +32,8 @@ void	reset_fract(t_fractol *data)
 		lets_draw(data, &mandelbrot);
 	else if (data->value == 1)
 		lets_draw(data, &julia);
+	else if (data->value == 2)
+		lets_draw(data, &my_fract);
 }
 
 int	handle_no_event(t_fractol *data)
@@ -40,6 +42,8 @@ int	handle_no_event(t_fractol *data)
 		lets_draw(data, &mandelbrot);
 	else if (data->value == 1)
 		lets_draw(data, &julia);
+	else if (data->value == 2)
+		lets_draw(data, &my_fract);
 	return (0);
 }
 

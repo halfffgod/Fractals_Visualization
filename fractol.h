@@ -77,6 +77,7 @@ void	get_color(t_fractol *data);
 void	mandelbrot(t_fractol *data);
 void	julia_default(int ac, char **av, t_fractol *data);
 void	julia(t_fractol *data);
+void	my_fract(t_fractol *data);
 
 //drawing
 void	lets_draw(t_fractol *data, void (*f)(t_fractol *));

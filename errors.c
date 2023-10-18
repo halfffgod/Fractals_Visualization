@@ -14,8 +14,9 @@
 
 void	errors(void)
 {
-	ft_putstr_fd("\t ERROR!\n\t enter:", 2);
-	ft_putstr_fd("\n\t./fractol mandelbrot     or ", 2);
-	ft_putstr_fd("\n\t./fractol julia <value_1> <value_2>", 2);
+	ft_putstr_fd("\t WRONG FRACTAL NAME!\n\t ENTER ANY OF THEM:", 2);
+	ft_putstr_fd("\n\t./fractol mandelbrot			or ", 2);
+	ft_putstr_fd("\n\t./fractol julia <value_1> <value_2>	or", 2);
+	ft_putstr_fd("\n\t./fractol fractal", 2);
 	exit(1);
 }

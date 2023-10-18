@@ -14,13 +14,18 @@
 
 int	checking(int ac, char **av, t_fractol *data)
 {
-	if (ac == 4 && (is_numeric(av[2]) == 0 || is_numeric(av[3]) == 0))
-		errors();
 	if (ac == 2 && ft_strncmp(av[1], "mandelbrot", 10) == 0
 		&& ft_strlen(av[1]) == 10)
 	{
 		data->value = 0;
 		lets_draw(data, &mandelbrot);
+		return (1);
+	}
+	else if (ac == 2 && ft_strncmp(av[1], "fractal", 7) == 0
+		&& ft_strlen(av[1]) == 7)
+	{
+		data->value = 2;
+		lets_draw(data, &my_fract);
 		return (1);
 	}
 	else if ((ft_strncmp(av[1], "julia", 5) == 0
@@ -44,6 +49,8 @@ int	main(int ac, char **av)
 	if (!data)
 		return (-1);
 	fractal_init(data);
+	if (ac == 4 && (is_numeric(av[2]) == 0 || is_numeric(av[3]) == 0))
+		errors();
 	if (ac == 2 || ac == 4)
 	{
 		if (checking(ac, av, data) == 1)

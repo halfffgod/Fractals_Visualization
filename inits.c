@@ -24,7 +24,7 @@ void	fractal_init(t_fractol *data)
 	data->x_center = 2.0;
 	data->y_center = 2.0;
 	data->max_iter = 80;
-	data->color = 0xEE33FF; //fuck colors
+	data->color = 0xEE33FF;
 	data->color_code = 0;
 }
 
