@@ -1,2 +1,3 @@
-# fract_ol_42
+# Fractals Vizualizatiom
+
 This project is about creating graphically beautiful fractals.
